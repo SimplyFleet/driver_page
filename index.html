@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quick Links</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: #ffff;
+      }
+      .logo {
+        max-width: 200px;
+        margin-bottom: 20px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+        width: 90%;
+        max-width: 400px;
+      }
+      .tile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #00838f;
+        color: white;
+        text-decoration: none;
+        padding: 15px;
+        border-radius: 8px;
+        font-size: 18px;
+        text-align: center;
+        transition: background 0.3s;
+      }
+      .tile:hover {
+        background: #005f6b;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="assets/simplyfleet.png" alt="Simply Fleet Logo" class="logo" />
+    <div class="grid">
+      <a href="https://www.google.com" class="tile" target="_blank">Google</a>
+      <a href="https://www.bing.com" class="tile" target="_blank">Bing</a>
+      <a href="https://news.ycombinator.com" class="tile" target="_blank"
+        >Hacker News</a
+      >
+      <a href="https://www.bbc.com/news" class="tile" target="_blank"
+        >BBC News</a
+      >
+      <a href="https://www.cnn.com" class="tile" target="_blank">CNN</a>
+      <a href="https://www.reuters.com" class="tile" target="_blank">Reuters</a>
+    </div>
+  </body>
+</html>
